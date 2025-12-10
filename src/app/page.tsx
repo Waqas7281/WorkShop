@@ -766,7 +766,7 @@ function FloatingButtons() {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-40">
       <a
-        href="https://wa.me/917522442893"
+        href="https://wa.me/971522442893"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all transform hover:scale-110"
