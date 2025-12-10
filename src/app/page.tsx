@@ -793,7 +793,7 @@ function Footer({ setCurrentPage }: { setCurrentPage: (page: string) => void }) 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-4">
-              <Car className="h-8 w-8 text-orange-500 mr-2" />
+            <img src="/logo.png" className="h-[60px] flex items-center justify-center"/>
               <span className="font-bold text-xl">Rapid Road Assist</span>
             </div>
             <p className="text-slate-300 mb-4">
