@@ -43,8 +43,20 @@ export default function RapidRoadAssist() {
   );
 }
 
-// Navbar Component
-function Navbar({ scrolled, currentPage, setCurrentPage, mobileMenuOpen, setMobileMenuOpen }) {
+// Navbar Component – Fixed TypeScript error
+function Navbar({ 
+  scrolled, 
+  currentPage, 
+  setCurrentPage, 
+  mobileMenuOpen, 
+  setMobileMenuOpen 
+}: { 
+  scrolled: boolean;
+  currentPage: string;
+  setCurrentPage: (page: string) => void;
+  mobileMenuOpen: boolean;
+  setMobileMenuOpen: (open: boolean) => void;
+}) {
   const menuItems = [
     { name: 'Home', id: 'home' },
     { name: 'Services', id: 'services' },
@@ -106,8 +118,18 @@ function Navbar({ scrolled, currentPage, setCurrentPage, mobileMenuOpen, setMobi
   );
 }
 
-// Mobile Sidebar
-function MobileSidebar({ isOpen, setIsOpen, currentPage, setCurrentPage }) {
+// Mobile Sidebar – Fixed TypeScript
+function MobileSidebar({ 
+  isOpen, 
+  setIsOpen, 
+  currentPage, 
+  setCurrentPage 
+}: { 
+  isOpen: boolean;
+  setIsOpen: (open: boolean) => void;
+  currentPage: string;
+  setCurrentPage: (page: string) => void;
+}) {
   const menuItems = [
     { name: 'Home', id: 'home' },
     { name: 'Services', id: 'services' },
@@ -168,32 +190,28 @@ function MobileSidebar({ isOpen, setIsOpen, currentPage, setCurrentPage }) {
   );
 }
 
-// Hero Slider Component
+// Hero Slider – Fixed: removed the broken `image` variable
 function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800",
+      image: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=1600&auto=format&fit=crop",
       title: "24/7 Rapid Road Assist",
       subtitle: "We're There When You Need Us Most!",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800",
+      image: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1600&auto=format&fit=crop",
       title: "Fast & Reliable Service",
       subtitle: "Professional Help Arrives in Minutes",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600",
-      title: "Lowest price Guaranteed",
+      image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600&auto=format&fit=crop",
+      title: "Lowest Price Guaranteed",
       subtitle: "Affordable Roadside Assistance for All Vehicles",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&auto=format&fit=crop",
       title: "Complete Car Recovery",
       subtitle: "From Battery to Towing - We Handle It All",
     },
@@ -240,16 +258,10 @@ function HeroSlider() {
         </div>
       ))}
       
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-3 rounded-full transition-all"
-      >
+      <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-3 rounded-full transition-all">
         <ChevronLeft className="h-6 w-6" />
       </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-3 rounded-full transition-all"
-      >
+      <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-3 rounded-full transition-all">
         <ChevronRight className="h-6 w-6" />
       </button>
 
