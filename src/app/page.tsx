@@ -174,25 +174,29 @@ function HeroSlider() {
   
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=1600',
-      title: '24/7 Rapid Road Assist',
-      subtitle: "We're There When You Need Us Most!"
+      image:
+        "https://images.unsplash.com/photo-1625047509168-280e2ee25f60?w=1600",
+      title: "24/7 Rapid Road Assist",
+      subtitle: "We're There When You Need Us Most!",
     },
     {
-      image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600',
-      title: 'Fast & Reliable Service',
-      subtitle: 'Professional Help Arrives in Minutes'
+      image:
+        "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600",
+      title: "Fast & Reliable Service",
+      subtitle: "Professional Help Arrives in Minutes",
     },
     {
-      image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600',
-      title: 'Lowest price Guaranteed',
-      subtitle: 'Affordable Roadside Assistance for All Vehicles'
+      image:
+        "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600",
+      title: "Lowest price Guaranteed",
+      subtitle: "Affordable Roadside Assistance for All Vehicles",
     },
     {
-      image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600',
-      title: 'Complete Car Recovery',
-      subtitle: 'From Battery to Towing - We Handle It All'
-    }
+      image:
+        "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600",
+      title: "Complete Car Recovery",
+      subtitle: "From Battery to Towing - We Handle It All",
+    },
   ];
 
   useEffect(() => {
