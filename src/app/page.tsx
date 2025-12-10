@@ -175,13 +175,13 @@ function HeroSlider() {
   const slides = [
     {
       image:
-        "https://images.unsplash.com/photo-1625047509168-280e2ee25f60?w=1600",
+        "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800",
       title: "24/7 Rapid Road Assist",
       subtitle: "We're There When You Need Us Most!",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600",
+        "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800",
       title: "Fast & Reliable Service",
       subtitle: "Professional Help Arrives in Minutes",
     },
