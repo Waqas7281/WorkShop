@@ -67,31 +67,44 @@ function Navbar({
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-slate-900 shadow-lg' : 'bg-orange-500'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-orange-500" : "bg-orange-500"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center cursor-pointer" onClick={() => setCurrentPage('home')}>
-            <img src="/logo.png"   className='h-[70px] items-center flex'/>
-            <span className="text-white font-bold text-xl">Rapid Road Assist</span>
+          <div
+            className="flex items-center cursor-pointer"
+            onClick={() => setCurrentPage("home")}
+          >
+            <img src="/logo.png" className="h-[70px] items-center flex" />
+            <span className="text-white font-bold text-xl">
+              Rapid Road Assist
+            </span>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-orange-500">
-            {menuItems.map(item => (
+            {menuItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => {
-                  setCurrentPage(item.id === 'how-it-works' || item.id === 'gallery' ? 'home' : item.id);
-                  if (item.id === 'how-it-works' || item.id === 'gallery') {
+                  setCurrentPage(
+                    item.id === "how-it-works" || item.id === "gallery"
+                      ? "home"
+                      : item.id
+                  );
+                  if (item.id === "how-it-works" || item.id === "gallery") {
                     setTimeout(() => {
-                      document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+                      document
+                        .getElementById(item.id)
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }, 100);
                   }
                 }}
                 className={`text-white hover:text-orange-500 transition-colors ${
-                  currentPage === item.id ? 'text-orange-500' : ''
+                  currentPage === item.id ? "text-orange-500" : ""
                 }`}
               >
                 {item.name}
@@ -111,7 +124,11 @@ function Navbar({
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden text-white"
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -251,11 +268,11 @@ function HeroSlider() {
               <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h1>
               <p className="text-xl md:text-2xl mb-8">{slide.subtitle}</p>
               <a
-                href="tel:+919876543210"
+                href="tel:+971522442893"
                 className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105"
               >
                 <Phone className="inline h-5 w-5 mr-2" />
-                Call Now: +91-98765-43210
+                Call Now: +971-52-244-2893
               </a>
             </div>
           </div>
@@ -749,7 +766,7 @@ function FloatingButtons() {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-40">
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/917522442893"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all transform hover:scale-110"
@@ -758,7 +775,7 @@ function FloatingButtons() {
         <MessageCircle className="h-6 w-6" />
       </a>
       <a
-        href="tel:+919876543210"
+        href="tel:+971522442893"
         className="bg-orange-500 hover:bg-orange-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all transform hover:scale-110"
         title="Call Now"
       >
