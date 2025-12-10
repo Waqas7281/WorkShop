@@ -488,11 +488,11 @@ function HomePage() {
           </h2>
           <p className="text-white text-lg mb-8">Available 24/7 for all your roadside emergencies</p>
           <a
-            href="tel:+919876543210"
+            href="tel:+971522442893"
             className="inline-block bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105"
           >
             <Phone className="inline h-5 w-5 mr-2" />
-            +91-98765-43210
+            +971-52-244-2893
           </a>
         </div>
       </section>
@@ -839,8 +839,8 @@ function Footer({ setCurrentPage }: { setCurrentPage: (page: string) => void }) 
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone className="h-5 w-5 text-orange-500 mt-1" />
-                <a href="tel:+919876543210" className="text-slate-300 hover:text-orange-500">
-                  +91-98765-43210
+                <a href="tel:+971522442893" className="text-slate-300 hover:text-orange-500">
+                  +971-52-244-2893
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -851,7 +851,7 @@ function Footer({ setCurrentPage }: { setCurrentPage: (page: string) => void }) 
               </li>
               <li className="flex items-start gap-2">
                 <MessageCircle className="h-5 w-5 text-orange-500 mt-1" />
-                <a href="https://wa.me/919876543210" className="text-slate-300 hover:text-orange-500">
+                <a href="https://wa.me/971522442893" className="">
                   WhatsApp Us
                 </a>
               </li>
