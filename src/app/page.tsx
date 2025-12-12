@@ -773,11 +773,11 @@ function ServicesPage({
             Our team is ready to help you 24/7
           </p>
           <a
-            href="tel:+919876543210"
+            href="tel:+971522442893"
             className="inline-block bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-bold hover:bg-slate-100 transition-all"
           >
             <Phone className="inline h-5 w-5 mr-2" />
-            Call +91-98765-43210
+            Call +971-52-244-2893
           </a>
         </div>
       </div>
@@ -828,12 +828,13 @@ function ContactPage() {
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">Phone</h3>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+9715224422893"
                     className="text-slate-600 hover:text-orange-500"
                   >
-                    +91-98765-43210
+                    +971-52-244-2893
                   </a>
                 </div>
+                
               </div>
 
               <div className="flex items-start gap-4">
@@ -854,10 +855,10 @@ function ContactPage() {
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">WhatsApp</h3>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/971522442893"
                     className="text-slate-600 hover:text-orange-500"
                   >
-                    +91-98765-43210
+                    +971-52-244-2893
                   </a>
                 </div>
               </div>
@@ -883,7 +884,7 @@ function ContactPage() {
                 For immediate roadside assistance:
               </p>
               <a
-                href="tel:+919876543210"
+                href="tel:+971522442893"
                 className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition-all"
               >
                 <Phone className="inline h-5 w-5 mr-2" />
@@ -987,10 +988,10 @@ function FloatingButtons() {
         href="https://wa.me/971522442893"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all transform hover:scale-110"
+        className="  text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all transform hover:scale-110"
         title="WhatsApp"
       >
-        <MessageCircle className="h-6 w-6" />
+        <img src="/WhatsApp.svg.webp"/>
       </a>
       <a
         href="tel:+971522442893"
