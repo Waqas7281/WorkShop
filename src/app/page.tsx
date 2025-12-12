@@ -834,7 +834,7 @@ function ContactPage() {
                     +971-52-244-2893
                   </a>
                 </div>
-                
+
               </div>
 
               <div className="flex items-start gap-4">
@@ -1019,7 +1019,7 @@ function Footer({
               <img
                 src="/logo.png"
                 alt="Rapid Road Assist Logo"
-                className="h-12 w-12 md:h-14 md:w-14 object-contain drop-shadow-lg"
+                className="h-30 w-30 md:h-25 md:w-25 object-contain drop-shadow-lg"
               />
               <span className="font-bold text-xl text-white">
                 Rapid Road Assist
